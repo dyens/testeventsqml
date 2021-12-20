@@ -15,7 +15,7 @@ public:
 
     bool event(QEvent *e) override
     {
-        qDebug() << "EVENT RECIEVED";
+        qDebug() << "EVENT RECIEVED:" << e->type();
         return QObject::event(e);
     }
 
